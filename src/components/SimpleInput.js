@@ -13,6 +13,10 @@ const SimpleInput = (props) => {
     event.preventDefault();
     const enteredValue = inputRef.current.value;
 
+    if (enteredName.trim() === "") {
+      return
+    }
+
     console.log(enteredName);
     console.log(enteredValue);
 
